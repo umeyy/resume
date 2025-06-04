@@ -1,0 +1,933 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f4f0;
+    color: #3f3c3c;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px; 
+    margin-left: 20px;
+    padding: 0;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #e1cac9, #e9e9d0, #ffe6ed); /* soft pink-white-brown gradient */
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(237, 188, 188, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;    /* space between logo and text */
+}
+
+.logo-img {
+    height: 70px;      /* You can make it 30px or 35px for smaller */
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;  /* This rounds the edges into a circle */
+    object-fit: cover;  /* Ensures the image fills the circle nicely */
+    border: 2px solid #d1b776;  /* Optional: Adds a professional border (light pink) */
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ece3e0; /* or whatever color suits your theme */
+}
+
+
+
+
+
+/* Navigation */
+nav {
+    position: relative;
+    margin-left: auto;  /* Pushes the nav links to the right */
+    display: flex;
+    align-items: center;
+    width: auto;        /* Keeps it auto-sized based on content */
+}
+
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: #5b3c3c; /* deep brown shade */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;  /* Icon size */
+    position: relative;
+    
+}
+
+
+/* Adding icon bounce effect */
+.nav-links li a:hover i {
+    color: #e8dad6;
+    transform: translateY(-5px); /* Bounce the icon as well */
+}
+/* Hover Effects with Bouncing and Color Change */
+ nav ul li a:hover {
+    color: #a16380; /* Light pink on hover */
+    font-weight: 500;
+    transform: translateY(-5px);  /* Bounce effect (move up slightly) */
+}
+
+ nav ul li a i { 
+    color: #b8035d;
+    font-size: 18px;  /* Icon size */
+    transition: transform  0.3s ease;
+
+   
+}
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f4f0;
+    color: #3f3c3c;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px; 
+    margin-left: 20px;
+    padding: 0;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #e1cac9, #e9e9d0, #ffe6ed); /* soft pink-white-brown gradient */
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(237, 188, 188, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;    /* space between logo and text */
+}
+
+.logo-img {
+    height: 70px;      /* You can make it 30px or 35px for smaller */
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;  /* This rounds the edges into a circle */
+    object-fit: cover;  /* Ensures the image fills the circle nicely */
+    border: 2px solid #d1b776;  /* Optional: Adds a professional border (light pink) */
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ece3e0; /* or whatever color suits your theme */
+}
+
+
+
+
+
+/* Navigation */
+nav {
+    position: relative;
+    margin-left: auto;  /* Pushes the nav links to the right */
+    display: flex;
+    align-items: center;
+    width: auto;        /* Keeps it auto-sized based on content */
+}
+
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: #5b3c3c; /* deep brown shade */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;  /* Icon size */
+    position: relative;
+    
+}
+
+
+/* Adding icon bounce effect */
+.nav-links li a:hover i {
+    color: #e8dad6;
+    transform: translateY(-5px); /* Bounce the icon as well */
+}
+/* Hover Effects with Bouncing and Color Change */
+ nav ul li a:hover {
+    color: #a16380; /* Light pink on hover */
+    font-weight: 500;
+    transform: translateY(-5px);  /* Bounce effect (move up slightly) */
+}
+
+ nav ul li a i { 
+    color: #b8035d;
+    font-size: 18px;  /* Icon size */
+    transition: transform  0.3s ease;
+
+   
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 40px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    color: #834536
+}
+
+.hero-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color:#40352f;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#3a2b24;
+}
+
+/* Let's Chat Button */
+.chat-button {
+    margin-left: auto; /* Pushes button to the right end */
+    size: 10;
+}
+
+.chat-button {
+    background-color: #d68686;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition:  0.3s ease-in-out;
+
+}
+.chat-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4b2e2e;
+  }
+.chat-button:hover {
+    background-color: #b98484;
+}
+
+/* Footer styles */
+
+.footer {
+    background: linear-gradient(90deg, #ffe4e1, #f5f5dc, #fddde6);
+    
+    color: #584c4c;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #4b3d3d;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-links a i {
+    margin-right: 8px;
+    color: #e785b5; /* Elegant pink for icons */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a38952;
+    transform: translateY(-2px);
+}
+
+.footer-links a:hover i {
+    color: #0c060afb;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Chat Section Styling */
+.chat section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chat-section h2 {
+    font-size: 36px;
+    color: #4b2e2e;  /* Deep brown color */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.chat-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chat-form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b2e2e;
+    text-align: left;
+    width: 100%;
+}
+
+.chat-form input, .chat-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-form input:focus, .chat-form textarea:focus {
+    border-color: #f07db7;  /* Light pink border on focus */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+.chat-form div li a { padding: 10px 25px;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    color: white;
+    position: relative;
+    
+}
+.chat-form div {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #f29ec8;  /* Pink color */
+    color: rgb(190, 168, 168);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font color: #ff69b4;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chat-form div:hover {
+    background-color: #32241f;  /* Orange color on hover */
+    transform: scale(1.05);
+}
+
+.chat-form div:active {
+    background-color: #1c1615;  /* Slightly darker orange */
+    transform: scale(1);
+}
+
+.chat-form input::placeholder, .chat-form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .chat-section {
+        padding: 20px;
+    }
+
+    .chat-section h2 {
+        font-size: 28px;
+    }
+
+    .chat-form {
+        max-width: 90%;
+    }
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff8f7;
+    color: #5c4033;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #a9746e, #ffdde1);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-container {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #fff;
+    border-top: 3px solid #a9746e;
+  }
+  
+  .message {
+    max-width: 60%;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1.2rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background: #f9d5e5;
+    color: #5c4033;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background: #e7dcd7;
+    color: #3a2e2e;
+    border-bottom-left-radius: 0;
+  }
+  
+  .input-container {
+    display: flex;
+    border-top: 2px solid #a9746e;
+    background: #fff8f7;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    color: #5c4033;
+  }
+  
+  .input-container button {
+    padding: 1rem 2rem;
+    background: #a9746e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background: #8c5e55;
+  }
+  
+/* Hero Section */
+.habiba {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.habiba img {
+    width: 400px;
+    border-radius: 40px;
+}
+
+.habiba-text h2 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    color: #834536
+}
+
+.habiba-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color:#40352f;
+}
+
+.habiba-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#3a2b24;
+    
+}
+
+:root {
+  --pink: #f9d5e5;
+  --white: #ffffff;
+  --brown: #6b4f4f;
+  --light-brown: #a88b8b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--brown);
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--brown);
+}
+
+.section {
+  background-color: var(--pink);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(107, 79, 79, 0.2);
+}
+
+.section h2 {
+  color: var(--brown);
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.highlight {
+  color: var(--light-brown);
+  font-weight: bold;
+}
+/* General Page Styling */
+body {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px; 
+    margin-left: 20px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1e1;  /* Soft off-white background */
+    color: #5a4a42;  /* Elegant dark brown for text */
+    line-height: 1.6;
+}
+
+/* Container for Page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    background-color: #fff; /* White background for content area */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling (for H1 & H2) */
+h1, h2 {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #5c3d2e;  /* Deep brown for headings */
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+/* Styling for h1 */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #e3c6a2, #d4a58e);  /* Soft warm gradient */
+    z-index: -1;
+    filter: blur(6px);
+    animation: glowEffect 2s infinite alternate;
+}
+
+@keyframes glowEffect {
+    0% {
+        opacity: 0.8;
+        filter: blur(4px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(6px);
+    }
+}
+
+/* Styling for h2 */
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #7e6c56;  /* Muted brownish green */
+    background-color: pink;
+    margin-bottom: 16px;
+}
+
+/* About Me Section */
+.about-me {
+    font-size: 18px;
+    color: #5a4a42;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    text-align: justify;
+    padding: 0 20px;
+    margin:center;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #e1c7a1;  /* Golden highlight */
+    font-weight: bold;
+}
+
+/* Custom Box for Special Text */
+.special-text-box {
+    background-color: #f4e6e1;  /* Soft beige background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #d4a58e;  /* Subtle left border for style */
+}
+
+/* Image Styling (if you have an image of yourself) */
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #d4a58e; /* Elegant border around the image */
+}
+
+/* Buttons (if any) */
+button {
+    background-color: #e3c6a2;  /* Soft beige color */
+    color: #5a4a42;  /* Elegant dark brown text */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #d4a58e;  /* Light coral color on hover */
+    color: white;
+}
+
+/* Footer Styling */
+.footer {
+    background: linear-gradient(90deg, #f5e8d3, #e1d0b0);  /* Soft gradient */
+    color: #5a4a42;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #d4bca0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #5a4a42;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .about-me {
+        font-size: 16px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff8f7;
+    color: #5c4033;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background: linear-gradient(90deg, #a9746e, #ffdde1);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-container {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: #fff;
+    border-top: 3px solid #a9746e;
+  }
+  
+  .message {
+    max-width: 60%;
+    margin: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 1.2rem;
+    position: relative;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background: #f9d5e5;
+    color: #5c4033;
+    border-bottom-right-radius: 0;
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background: #e7dcd7;
+    color: #3a2e2e;
+    border-bottom-left-radius: 0;
+  }
+  
+  .input-container {
+    display: flex;
+    border-top: 2px solid #a9746e;
+    background: #fff8f7;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background: #fff;
+    color: #5c4033;
+  }
+  
+  .input-container button {
+    padding: 1rem 2rem;
+    background: #a9746e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .input-container button:hover {
+    background: #8c5e55;
+  }
+  
+/* Footer styles */
+
+.footer {
+    background: linear-gradient(90deg, #ffe4e1, #f5f5dc, #fddde6);
+    
+    color: #584c4c;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #4b3d3d;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-links a i {
+    margin-right: 8px;
+    color: #e785b5; /* Elegant pink for icons */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a38952;
+    transform: translateY(-2px);
+}
+
+.footer-links a:hover i {
+    color: #0c060afb;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+}

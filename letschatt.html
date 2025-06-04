@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversation Page</title>
+  <link rel="stylesheet" href="letschat.css">
+</head>
+<body>
+  <header>
+    Chat With Me
+  </header>
+
+  <div class="chat-container" id="chat">
+    <div class="message bot">Hi there! How can I help you today?</div>
+  </div>
+
+  <div class="input-container">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const message = input.value.trim();
+      if (message === '') return;
+
+      const chat = document.getElementById('chat');
+
+      const userMsg = document.createElement('div');
+      userMsg.className = 'message user';
+      userMsg.textContent = message;
+      chat.appendChild(userMsg);
+
+      input.value = '';
+      chat.scrollTop = chat.scrollHeight;
+
+      // Simple bot logic
+      setTimeout(() => {
+        const botMsg = document.createElement('div');
+        botMsg.className = 'message bot';
+        botMsg.textContent = generateReply(message);
+        chat.appendChild(botMsg);
+        chat.scrollTop = chat.scrollHeight;
+      }, 700);
+    }
+
+    function generateReply(userText) {
+      const lower = userText.toLowerCase();
+      if (lower.includes('hello') || lower.includes('hi')) {
+        return "Hey there! 😊";
+      } else if (lower.includes('how are you')) {
+        return "I'm just code, but I'm doing great! How about you?";
+      } else if (lower.includes('bye')) {
+        return "Goodbye! Have a sweet day 💕";
+      } else if (lower.includes('shut up')) {
+        return "fu** you shtuup?";
+       } else if (lower.includes('shutup')) {
+        return "fu** you shtuup?";} 
+        else if (lower.includes('i miss you')) {
+          return "awwww, i love you 💕 would you like to meet me? ";
+        }
+         else if (lower.includes('write a code for me please')) {
+          return"pirhy jo nokar ahyan cha" ;
+        }
+        else if (lower.includes('i am upset') || lower.includes('i am sad')){
+         return"loosi charyo ahyan cha? tu aen preshan? shakal sidhi kr hal bukh lagi thae wan canteen ta kujh khae aw" ;
+        }
+        else if (lower.includes('badtameez tokhy thayo kehry jahil aw?'))
+        {
+          return "oye chup kr mukhy tu jehry wandy thayo aw"
+        }
+         else {
+        return "That's interesting! NOW SHUTUP AND DO YOUR BUSSINESS (JAHIL) WANDA PRHAE KHA BARO CHANDA HALL HALI PEHJO PARH wani{ GUSSO NA KAR MAZAK THO KAYA }";
+       
+      }
+    }
+  </script>
+</body>
+</html>

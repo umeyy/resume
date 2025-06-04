@@ -1,0 +1,289 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f8f4f0;
+    color: #3f3c3c;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px; 
+    margin-left: 20px;
+    padding: 0;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(90deg, #ea9e9c, rgb(239, 193, 200), #e8b2b0); /* soft pink-white-brown gradient */
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(237, 188, 188, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;    /* space between logo and text */
+}
+
+.logo-img {
+    height: 70px;      /* You can make it 30px or 35px for smaller */
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;  /* This rounds the edges into a circle */
+    object-fit: cover;  /* Ensures the image fills the circle nicely */
+    border: 2px solid #d1b776;  /* Optional: Adds a professional border (light pink) */
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ece3e0; /* or whatever color suits your theme */
+}
+
+
+
+
+
+/* Navigation */
+nav {
+    position: relative;
+    margin-left: auto;  /* Pushes the nav links to the right */
+    display: flex;
+    align-items: center;
+    width: auto;        /* Keeps it auto-sized based on content */
+}
+
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: #5b3c3c; /* deep brown shade */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;  /* Icon size */
+    position: relative;
+    
+}
+
+
+/* Adding icon bounce effect */
+.nav-links li a:hover i {
+    color: #e8dad6;
+    transform: translateY(-5px); /* Bounce the icon as well */
+}
+/* Hover Effects with Bouncing and Color Change */
+ nav ul li a:hover {
+    color: #a16380; /* Light pink on hover */
+    font-weight: 500;
+    transform: translateY(-5px);  /* Bounce effect (move up slightly) */
+}
+
+ nav ul li a i { 
+    color: #b8035d;
+    font-size: 18px;  /* Icon size */
+    transition: transform  0.3s ease;
+
+   
+}
+
+
+
+  
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 40px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    color: #834536
+}
+
+.hero-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color:#40352f;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#3a2b24;
+}
+
+.chat-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin-bottom: 80px;
+    flex-direction: row-reverse; /* 👈 flips the content order */
+  }
+  
+  .chat-section h2 {
+    font-size: 30px;
+    color: #4b2e2e;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Let's Chat Button */
+  .chat-button { 
+    margin-left: auto;
+    background-color: #d68686;
+    padding: 8px 16px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .chat-button:hover {
+    background-color: #b98484;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+/* Footer styles */
+
+.footer {
+    background: linear-gradient(90deg, #ffe4e1, #f5f5dc, #fddde6);
+    
+    color: #584c4c;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #4b3d3d;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-links a i {
+    margin-right: 8px;
+    color: #e785b5; /* Elegant pink for icons */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a38952;
+    transform: translateY(-2px);
+}
+
+.footer-links a:hover i {
+    color: #0c060afb;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+
+
+
+  
+/* Hero Section */
+.habiba {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+.habiba img {
+    width: 400px;
+    border-radius: 40px;
+}
+
+.habiba-text h2 {
+    font-size: 36px;
+    font-family: 'Dancing Script', cursive;
+    color: #834536
+}
+
+.habiba-text h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color:#40352f;
+}
+
+.habiba-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color:#3a2b24;
+    
+}
+
+
+/* Footer Styling */
+.footer {
+    background: linear-gradient(90deg, #f5e8d3, #e1d0b0);  /* Soft gradient */
+    color: #5a4a42;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+    border-top: 1px solid #d4bca0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #5a4a42;
+}
+

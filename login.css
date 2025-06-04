@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+
+    background-color: #f8f4f0;
+    color: #3f3c3c;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px; 
+    margin-left: 30px;
+    padding: 0;
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ea9e9c, rgb(239, 193, 200), #e8b2b0); /* soft pink-white-brown gradient */
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 10px rgba(237, 188, 188, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;    /* space between logo and text */
+}
+
+.logo-img {
+    height: 70px;      /* You can make it 30px or 35px for smaller */
+    width: auto;
+    object-fit: contain;
+    border-radius: 50%;  /* This rounds the edges into a circle */
+    object-fit: cover;  /* Ensures the image fills the circle nicely */
+    border: 2px solid #d1b776;  /* Optional: Adds a professional border (light pink) */
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ece3e0; /* or whatever color suits your theme */
+}
+
+
+
+
+
+/* Navigation */
+nav {
+    position: relative;
+    margin-left: auto;  /* Pushes the nav links to the right */
+    display: flex;
+    align-items: center;
+    width: auto;        /* Keeps it auto-sized based on content */
+}
+
+
+nav ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: #5b3c3c; /* deep brown shade */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-size: 16px;
+    font-weight: bold;
+    font-size: 18px;  /* Icon size */
+    position: relative;
+    
+}
+
+
+/* Adding icon bounce effect */
+.nav-links li a:hover i {
+    color: #e8dad6;
+    transform: translateY(-5px); /* Bounce the icon as well */
+}
+/* Hover Effects with Bouncing and Color Change */
+ nav ul li a:hover {
+    color: #a16380; /* Light pink on hover */
+    font-weight: 500;
+    transform: translateY(-5px);  /* Bounce effect (move up slightly) */
+}
+
+ nav ul li a i { 
+    color: #b8035d;
+    font-size: 18px;  /* Icon size */
+    transition: transform  0.3s ease;
+
+   
+}
+
+
+
+/* Chat Section Styling */
+.chat section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.chat-section h2 {
+    font-size: 36px;
+    color: #4b2e2e;  /* Deep brown color */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.chat-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chat-form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b2e2e;
+    text-align: left;
+    width: 100%;
+}
+
+.chat-form input, .chat-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chat-form input:focus, .chat-form textarea:focus {
+    border-color: #f07db7;  /* Light pink border on focus */
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+.chat-form div li a { padding: 10px 25px;
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+    color: white;
+    position: relative;
+    
+}
+.chat-form div {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #f29ec8;  /* Pink color */
+    color: rgb(190, 168, 168);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font color: #ff69b4;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chat-form div:hover {
+    background-color: #32241f;  /* Orange color on hover */
+    transform: scale(1.05);
+}
+
+.chat-form div:active {
+    background-color: #1c1615;  /* Slightly darker orange */
+    transform: scale(1);
+}
+
+.chat-form input::placeholder, .chat-form textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Footer styles */
+
+.footer {
+    background: linear-gradient(90deg, #ffe4e1, #f5f5dc, #fddde6);
+    
+    color: #584c4c;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 50px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #4b3d3d;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-links a i {
+    margin-right: 8px;
+    color: #e785b5; /* Elegant pink for icons */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #a38952;
+    transform: translateY(-2px);
+}
+
+.footer-links a:hover i {
+    color: #0c060afb;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 10px;
+}
